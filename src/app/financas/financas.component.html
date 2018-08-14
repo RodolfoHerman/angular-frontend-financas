@@ -1,0 +1,53 @@
+<section class="content-header">
+  <h1>
+    Todas as Contas
+  </h1>
+</section>
+
+<section class="content">
+  <div class="jumbotron">
+
+    <div class="container">
+      <div class="pull-right">
+        <a href=""></a>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Valor Fatura</th>
+            <th scope="col">Data Vencimento</th>
+            <th scope="col">Status</th>
+            <th scope="col">Data Pagamento</th>
+            <th scope="col">Valor Pagamento</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let conta of contas">
+            <td>{{ conta.id }}</td>
+            <td>{{ conta.descricao }}</td>
+            <td>{{ conta.valorFatura }}</td>
+            <td>{{ conta.dataVencimento }}</td>
+            <td><span [ngClass]="(conta.status == 'Pendente') ? 'label label-danger' : 'label label-success'">{{ conta.status }}</span></td>
+            <td>{{ conta.dataPagamento }}</td>
+            <td>{{ conta.ValorPagamento }}</td>
+            <td>
+              <!-- <a class="check-link" data-toggle="tooltip" title="Pagar" href="#"><i class="fa fa-check fa-lg"></i></a> -->
+              <a class="edit-link" data-toggle="tooltip" title="Editar" href="#"><i class="fa fa-edit fa-2x"></i></a>
+              <a class="trash-link" data-toggle="tooltip" title="Excluir" href="#"><i class="fa fa-trash fa-2x"></i></a>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+
+
+</section>
