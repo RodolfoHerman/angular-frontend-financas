@@ -1,0 +1,66 @@
+<div class="conta-box">
+
+  <div class="row">
+
+    <div class="col-md-2 col-sm-2">
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+          <span [ngClass]="(conta.status == 'Pendente') ? 'label-danger' : 'label-info'" class="label conta-status">{{ conta.status }}</span>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+            <span class="conta-icon">
+              <i class="fa fa-5x fa-phone "></i>
+            </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-10 col-sm-10">
+      
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+
+            <span class="conta-titulo">
+              {{ conta.descricao }}
+            </span>  
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+          <div class="col-md-12 conta-texto">Valor Fatura: {{ conta.valorFatura }}</div>
+          <div class="col-md-12 conta-texto">Valor pagamento: {{ conta.valorPagamento }}</div>
+          <div class="col-md-12 conta-texto">Data Vencimento: {{ conta.dataVencimento }}</div>
+          <div class="col-md-12 conta-texto">Data pagamento: {{ conta.dataPagamento }}</div>
+        
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+          
+          <div class="pull-right">
+            <a class="edit-link" data-toggle="tooltip" title="Editar" href="#"><i class="fa fa-edit fa-2x"></i></a>
+            <a class="trash-link" data-toggle="tooltip" title="Excluir" href="#"><i class="fa fa-trash fa-2x"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Conta } from './conta.model';
+import { Conta } from './conta/conta.model';
 
 @Component({
   selector: 'mt-financas',

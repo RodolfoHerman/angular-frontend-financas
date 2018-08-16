@@ -24,7 +24,8 @@ import { FinancasModule } from './financas/financas.module';
     RouterModule, 
     AboutModule,
     FinancasModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    FinancasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

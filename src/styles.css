@@ -262,18 +262,33 @@ body {
   color: #dd4b39;
 }
 
-.table th {
+.table {
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
   text-align: center;
-  background-color: #555;
-  color: #FFF;
 }
 
-.table td {
-  border-bottom: 1px solid black;
-}
-
-.table-danger {
-  background-color: pink;
+.table td,
+.table th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border: 1px solid #ddd;
 }
 
 .trash-link,
@@ -292,4 +307,94 @@ body {
 
 .check-link:hover {
   color: #3c8dbc;
+}
+
+.alinhar {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+/* ###################################### */
+.conta-box {
+  display: block;
+  min-height: 140px;
+  background-color: #FFF;
+  width: 100%;
+  border-radius: 2px;
+  color: #555;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.conta-texto {
+  font-size: 1.2em;
+}
+
+.conta-titulo {
+  display: block;
+  width: 100%;
+  min-height: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.conta-box-icon {
+  display: block;
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+
+.conta-status {
+  display: block;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.conta-icon {
+  /* display: block;
+  width: 100px;
+  float: left;
+  text-align: center;
+  margin-top: 10px; */
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.conta-box-conteudo {
+  display: block;
+  /* float: left; */
+  margin: 10px 0px 0px 20px;
+  /* display: flex;
+  justify-content: space-around;
+  flex-flow: wrap; */
+}
+
+.fa-tint {
+  color: #3c8dbc;
+}
+
+.fa-bolt {
+  color: goldenrod;
+}
+
+.fa-phone {
+  color: darkgreen;
+}
+
+.money-check-alt {
+
+}
+
+.fa-car {
+
+}
+
+.fa-cart-arrow-down {
+
 }
