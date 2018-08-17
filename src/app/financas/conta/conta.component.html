@@ -15,7 +15,7 @@
 
         <div class="col-md-12 col-sm-12">
             <span class="conta-icon">
-              <i class="fa fa-5x fa-phone "></i>
+              <i class="fa fa-5x" [ngClass]="getIcon()"></i>
             </span>
         </div>
 
@@ -39,10 +39,10 @@
 
       <div class="row">
 
-          <div class="col-md-12 conta-texto">Valor Fatura: {{ conta.valorFatura }}</div>
-          <div class="col-md-12 conta-texto">Valor pagamento: {{ conta.valorPagamento }}</div>
-          <div class="col-md-12 conta-texto">Data Vencimento: {{ conta.dataVencimento }}</div>
-          <div class="col-md-12 conta-texto">Data pagamento: {{ conta.dataPagamento }}</div>
+          <div class="col-md-12 conta-texto"><pre>Valor Fatura    : {{ conta.valorFatura }}</pre></div>
+          <div class="col-md-12 conta-texto"><pre>Valor Pagamento : {{ conta.valorPagamento }}</pre></div>
+          <div class="col-md-12 conta-texto"><pre>Data Vencimento : {{ conta.dataVencimento }}</pre></div>
+          <div class="col-md-12 conta-texto"><pre>Data Pagamento  : {{ conta.dataPagamento }}</pre></div>
         
       </div>
 
